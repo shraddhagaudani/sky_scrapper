@@ -38,7 +38,7 @@ dependencies:
   shared_preferences: ^2.1.1
   provider:
   http:
-
+  connectivity_plus:
 
 
 dev_dependencies:

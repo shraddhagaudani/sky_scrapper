@@ -1,3 +1,5 @@
+
+import 'package:demo/controllers/providers/connectivity_provider.dart';
 import 'package:demo/controllers/providers/themeprovider.dart';
 import 'package:demo/views/screens/detailspage.dart';
 import 'package:demo/views/screens/homepage.dart';
@@ -12,6 +14,7 @@ void main() {
         ChangeNotifierProvider(
           create: (context) => ThemeAccessProvider(),
         ),
+        ChangeNotifierProvider(create: (context) => ConnectivityProvider(),),
       ],
       builder: (context, _) {
         return MaterialApp(
